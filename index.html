@@ -2,28 +2,120 @@
 <html>
 	<head>
 		<title>Gabriel Atienza's page</title>
-        <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="assets/man.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="./index.html">Home</a></li>
-	        	<li><a href="./about.html">About</a></li>
-        		<li><a href="./cv.html">CV</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="main">
-        		<h1>Hi there, I'm Gabriel Atienza!</h1>
-				<p>Welcome to my web page!</p>
-    		</div>
-		</div>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:gabatienza@gmail.com">email</a></li>
-        		<li><a href="https://github.com/gabatienza">github.com/gabatienza</a></li>
-			</ul>
-		</footer>
-		<script src="script.js"></script>
+    <!-- start navigation-area -->
+		<div id="navigation-area">
+      <div class="container-fluid fixed-top background-transparent" id="nav-container">
+        <nav class="navbar navbar-light navbar-expand-md justify-content-center">
+          <a href="/" class="neon navbar-brand d-flex w-50 mr-auto" id="brand-gab">Gabriel Atienza</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+              <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about-area">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- end navigation-area -->
+
+    <!-- start home / landing page -->
+    <div id="home-area" class="home-bg" data-stellar-background-ratio="0.6">
+      <div class="overlay">
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="profile-area text-center">
+                <img id="profile-pic" src="./assets/gab.png">
+                <h1 class="mt-2">Hi! I'm Gabriel.</h1>
+                <h4>I am a Web Developer from the SF Bay Area</h4>
+                <a href="#about-area" class="h1"><i class="fa fa-angle-down arrow"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end home / landing page -->
+    
+    <!-- start about area -->
+    <div id="about-area" class="background-colored">
+      <div class="container-fluid">
+        <div class="row py-5 px-5">
+          <div class="about-writeup col-sm-12 col-md-6">
+            <h3>Hi! I'm Gabriel  
+              <span class="h1">
+                  <i class="far fa-hand-paper"></i>
+              </span>
+            </h3>
+            <p>
+              I am a Bay Area based full-stack developer. Coming from previous work in analysis, I have since decided that I want to keep building things and go into web development. 
+              When I am not building apps, you will probably find me outdoors trying to enjoy nature and see different animals.
+            </p>
+            <p>Feel free to reach me using any of the links below:</p>
+            <p class="links">
+              <a class="mx-2 mt-5 h3" href="mailto:gab.atienza@gmail.com?subject=Hi Gabriel! I saw your page and wanted to reach out to you."><i class="far fa-envelope"></i></a>
+              <a class="mx-2 mt-3 h3" href="http://linkedin.com/in/gabrielatienza"><i class="fab fa-linkedin"></i></a>
+              <a class="mx-2 mt-3 h3" href="http://github.com/giftofgrub"><i class="fab fa-github"></i></a>
+            </p>
+
+            <p>
+              <a class="my-0 h3 btn btn-dark btn-sm" href="assets/GabResume.pdf">My Resume</a>
+            </p>
+          </div>
+          <div class="about-pic col-sm-12 col-md-6">
+              <img id="about-pic" src="assets/gabZion.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about area -->
+
+    <!-- start portfolio area -->
+    <div id="portfolio-area">
+      <div class="container-fluid text-center pt-3 pb-5 mb-5">
+        <h3 class="my-3">Projects</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+            <div id="jobly" style="cursor: pointer;" onclick="window.location='http://google.com';">
+              <img class="project-pic" src="assets/jobly.png">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+            <div id="warbler" style="cursor: pointer;" onclick="window.location='http://google.com';">
+              <img class="project-pic" src="assets/warbler.png">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+            <div id="warbler" style="cursor: pointer;" onclick="window.location='http://google.com';">
+              <img class="project-pic" src="assets/recipeep.png">
+            </div>
+          </div>
+          
+          
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- end portfolio area -->
+    <script src="script.js"></script>
+    
 	</body>
 </html>

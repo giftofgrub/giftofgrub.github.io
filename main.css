@@ -1,42 +1,66 @@
-body {
-    margin: auto;
-    background-color: lightblue;
-    width: 100%;
-    height: 500px;
+html {
+  scroll-behavior: smooth;
 }
 
-nav {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    margin: 0;
-    padding: 0px;
-    top: 0px;
-    font-weight: bold;
-    background-color: darkcyan;
-    border-bottom: 2px solid darkolivegreen;
+.project-pic {
+  height: 100%;
+  width: 100%;
 }
 
-.container {
-    margin-left: 20px;
-    margin-right: 20px;
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 50px #0ff
 }
 
-ul {
-    list-style: none;
+.home-bg {
+  padding-top: 10%;
 }
 
-ul li {
-    display: inline;
-    margin-right: 20px;
+.background-colored { background-color:rgb(235, 245, 244); }
+.background-transparent { background-color:transparent; }
+
+.profile-area {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.9);
+  color: rgb(24, 104, 124);
 }
 
-a {
-    text-decoration: none;
-    color: #999;
+#navigation-area {
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  position: fixed;
 }
 
-footer {
-    position: absolute;
-    bottom: 0px;
+#home-area {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url('assets/zion.jpg');
+  background-position: 0px 0px;
+  background-size:100% 100%;
+  z-index: 0;
+}
+
+#brand-gab {
+  font-size: 20px;
+  color: gray;
+}
+
+#profile-pic {
+  border-radius: 25%;
+  border: 3px solid grey
+}
+
+#about-pic {
+  max-height: 80%;
+  max-width: 90%;
+}
+
+#jobly {
+  
 }
