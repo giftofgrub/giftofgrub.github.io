@@ -22,10 +22,10 @@
                       <a class="nav-link" href="#about-area">About</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
+                      <a class="nav-link" href="#portfolio-area">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#contact-area">Contact</a>
                   </li>
               </ul>
           </div>
@@ -54,27 +54,22 @@
     <!-- end home / landing page -->
     
     <!-- start about area -->
-    <div id="about-area" class="background-colored">
+    <div id="about-area" class="background-colored text-center">
       <div class="container-fluid">
         <div class="row py-5 px-5">
           <div class="about-writeup col-sm-12 col-md-6">
-            <h3>Hi! I'm Gabriel  
-              <span class="h1">
-                  <i class="far fa-hand-paper"></i>
-              </span>
-            </h3>
-            <p>
+            <h3>Hi! My name is Gabriel...</h3>
+            <p class="my-4">
               I am a Bay Area based full-stack developer. Coming from previous work in analysis, I have since decided that I want to keep building things and go into web development. 
               When I am not building apps, you will probably find me outdoors trying to enjoy nature and see different animals.
             </p>
-            <p>Feel free to reach me using any of the links below:</p>
-            <p class="links">
+            <p class="links my-3">
               <a class="mx-2 mt-5 h3" href="mailto:gab.atienza@gmail.com?subject=Hi Gabriel! I saw your page and wanted to reach out to you."><i class="far fa-envelope"></i></a>
               <a class="mx-2 mt-3 h3" href="http://linkedin.com/in/gabrielatienza"><i class="fab fa-linkedin"></i></a>
               <a class="mx-2 mt-3 h3" href="http://github.com/giftofgrub"><i class="fab fa-github"></i></a>
             </p>
 
-            <p>
+            <p class="my-3">
               <a class="my-0 h3 btn btn-dark btn-sm" href="assets/GabResume.pdf">My Resume</a>
             </p>
           </div>
@@ -91,20 +86,47 @@
       <div class="container-fluid text-center pt-3 pb-5 mb-5">
         <h3 class="my-3">Projects</h3>
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-            <div id="jobly" style="cursor: pointer;" onclick="window.location='http://google.com';">
+          <div class="col-12 col-lg-6 col-xl-4 my-2 position-relative project details-invisible">
+            <div id="jobly" style="cursor: pointer;" onclick="window.location='http://jobly-linkedin-clone.herokuapp.com';">
               <img class="project-pic" src="assets/jobly.png">
             </div>
+            <div class="position-absolute project-details background-colored pt-5 px-4">
+              <h5>Jobly</h5>
+              <p>Job search application (Linkedin clone) where users can create an account, search for companies and jobs, apply to jobs, edit profile.</p>
+              <h6>React, Node, Express, PostgreSQL, JWT, bcrypt</h6>
+              <p class="mt-3">
+                <span><a class="mx-2 h3" href="http://github.com/giftofgrub/jobly" title="view code"><i class="fab fa-github"></i></a></span>
+                <span><a class="mx-2 h3" href="http://jobly-linkedin-clone.herokuapp.com" title="view live site"><i class="fas fa-binoculars"></i></a></span>
+              </p>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-            <div id="warbler" style="cursor: pointer;" onclick="window.location='http://google.com';">
+          <div class="col-12 col-lg-6 col-xl-4 my-2 position-relative project details-invisible">
+            <div id="warbler" style="cursor: pointer;" onclick="window.location='http://warbler-twitter-clone.herokuapp.com';">
               <img class="project-pic" src="assets/warbler.png">
             </div>
+            <div class="position-absolute project-details background-colored pt-5 px-4">
+                <h5>Warbler</h5>
+                <p>Messaging application (Twitter clone) where users can follow other users, post messages, like messages, edit profile.</p>
+                <h6>​Flask, SQLAlchemy, PostgreSQL, Jinja, bcrypt</h6>
+                <p class="mt-3">
+                  <span><a class="mx-2 h3" href="http://github.com/giftofgrub/warbler" title="view code"><i class="fab fa-github"></i></a></span>
+                  <span><a class="mx-2 h3" href="http://warbler-twitter-clone.herokuapp.com" title="view live site"><i class="fas fa-binoculars"></i></a></span>
+                </p>
+              </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-            <div id="warbler" style="cursor: pointer;" onclick="window.location='http://google.com';">
+          <div class="col-12 col-lg-6 col-xl-4 my-2 position-relative project details-invisible">
+            <div id="recipeep" style="cursor: pointer;" onclick="window.location='http://recipeep.herokuapp.com';">
               <img class="project-pic" src="assets/recipeep.png">
             </div>
+            <div class="position-absolute project-details background-colored pt-5 px-4">
+                <h5>Recipeep</h5>
+                <p>Recipe sharing application where users can create an account, create a recipe, comment on a recipe, edit a recipe, edit comments.</p>
+                <h6>​Node, Express, Mongoose, MongoDB, EJS, Passport</h6>
+                <p class="mt-3">
+                  <span><a class="mx-2 h3" href="http://github.com/giftofgrub/recipeapp" title="view code"><i class="fab fa-github"></i></a></span>
+                  <span><a class="mx-2 h3" href="http://recipeep.herokuapp.com" title="view live site"><i class="fas fa-binoculars"></i></a></span>
+                </p>
+              </div>
           </div>
           
           
@@ -115,6 +137,21 @@
 
     </div>
     <!-- end portfolio area -->
+
+    <!-- start portfolio area -->
+    <div id="contact-area" class="background-colored">
+      <hr>
+      <h6>gab.atienza@gmail.com || +18185199254</h6>
+      <p class="links my-3">
+        <a class="mx-2 mt-5 h3" href="mailto:gab.atienza@gmail.com?subject=Hi Gabriel! I saw your page and wanted to reach out to you."><i class="far fa-envelope"></i></a>
+        <a class="mx-2 mt-3 h3" href="http://linkedin.com/in/gabrielatienza"><i class="fab fa-linkedin"></i></a>
+        <a class="mx-2 mt-3 h3" href="http://github.com/giftofgrub"><i class="fab fa-github"></i></a>
+      </p>
+
+
+    </div>
+    <!-- end portfolio area -->
+
     <script src="script.js"></script>
     
 	</body>

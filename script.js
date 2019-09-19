@@ -15,4 +15,23 @@ window.onscroll = function () {
     }
 };
 
+var projects = document.getElementsByClassName('project');
+
+for (var i = 0; i < projects.length; i++) {
+  projects[i].addEventListener('mouseenter', detailsVisible, false);
+}
+
+for (var i = 0; i < projects.length; i++) {
+  projects[i].addEventListener('mouseleave', detailsInvisible, false);
+}
+
+function detailsVisible(e) {
+  e.target.classList.add("details-visible");
+  e.target.classList.remove("details-invisible");
+};
+
+function detailsInvisible(e) {
+  e.target.classList.add("details-invisible");
+  e.target.classList.remove("details-visible");
+}
 

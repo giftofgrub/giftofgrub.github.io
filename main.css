@@ -7,14 +7,24 @@ html {
   width: 100%;
 }
 
-.neon {
-  color: #fff;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #0ff,
-    0 0 50px #0ff
+.project-details{
+  text-align: center;
+  top: 10%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  opacity: 0.92;
+}
+
+.details-invisible>.project-details{
+  overflow: hidden;
+  height: 0; opacity: 0;
+  transition: height 0ms 400ms, opacity 600ms 0ms;
+}
+
+.details-visible>.project-details{
+  height: auto; opacity: 1;
+  transition: height 0ms 0ms, opacity 800ms 0ms;
 }
 
 .home-bg {
@@ -25,8 +35,7 @@ html {
 .background-transparent { background-color:transparent; }
 
 .profile-area {
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.9);
-  color: rgb(24, 104, 124);
+  color: lightgray;
 }
 
 #navigation-area {
@@ -46,21 +55,25 @@ html {
   z-index: 0;
 }
 
+#about-area {
+  min-height: 100vh;
+}
+
 #brand-gab {
   font-size: 20px;
   color: gray;
 }
 
 #profile-pic {
-  border-radius: 25%;
+  border-radius: 40%;
   border: 3px solid grey
 }
 
 #about-pic {
-  max-height: 80%;
+  max-height: 80vh;
   max-width: 90%;
 }
 
-#jobly {
-  
+#contact-area {
+  text-align: center;
 }
