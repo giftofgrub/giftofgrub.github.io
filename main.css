@@ -200,7 +200,7 @@ body {
   transition: all 0.5s;
 }
 
-.project:hover .hidden{
+.project:hover .hidden, .project:active .hidden{
   height: 80%;
 }
 
