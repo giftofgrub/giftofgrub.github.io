@@ -221,6 +221,10 @@ i:hover {
   color: rgb(0, 102, 204);
 }
 
+.about-pic, .about-profile, .project {
+  width: 100vw;
+}
+
 @media screen and (min-width: 980px) /* Desktop */ {
   .project {
     width: 30vw;
