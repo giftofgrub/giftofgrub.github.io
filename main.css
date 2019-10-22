@@ -131,7 +131,7 @@ body {
   max-height: 70vh;
   border-radius: 5%;
   margin-left: auto;
-  margin-right: 10%;
+  margin-right: auto;
 }
 
 .about-profile {
@@ -232,13 +232,15 @@ i:hover {
     width: 50%;
     max-width: 380px;
   }
+  .about-pic * {
+    margin-right: 5%;
+  }
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
   .about-pic, .about-profile, .project {
     width: 45vw;
-  }
-  
+  }  
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
