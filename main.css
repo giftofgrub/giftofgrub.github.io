@@ -1,9 +1,3 @@
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -52,11 +46,10 @@ body {
 }
 
 .title {
-  position: absolute;
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-  top: 40%;
+  position: relative;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Lato', sans-serif;
   animation: title 10s linear infinite;
   transition: all 0.5s;
@@ -80,6 +73,7 @@ body {
 }
 
 .title .name {
+  padding-top: 25%;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -91,6 +85,7 @@ body {
 
 .about {
   font-family: 'Lato', sans-serif;
+  margin-top: 2rem;
 }
 
 .about-title {
@@ -144,6 +139,9 @@ body {
   color: #16252cd5;
   text-align: center;
   width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -204,22 +202,26 @@ i:hover {
 
 .container {
   width: 100%;
+  justify-items: stretch;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 30px;
+  column-gap: 5px;
+  row-gap: 5px;
 }
 
 .project {
-  min-width: 500px;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10%;
   box-sizing: border-box;
   position: relative;
   min-height: 300px;
+  width: 100%;
   z-index: 1;
   transition: all 0.5s;
   box-sizing: border-box;
-  grid-column: span 12;
 }
 
 /* Desktop */
@@ -237,7 +239,7 @@ i:hover {
 }
 
 /* Mobile */
-@media screen and (min-width: 0px) and (max-width: 767px)  {
+@media screen and (max-width: 767px)  {
   .project {
     grid-column: span 12;
   }
